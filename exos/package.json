@@ -1,0 +1,26 @@
+{
+  "name": "exos-extension",
+  "version": "1.0.0",
+  "description": "EXOS Browser Extension",
+  "scripts": {
+    "build": "node build.js",
+    "watch": "nodemon --watch src --exec 'npm run build'",
+    "dev": "npm run build && npm run watch",
+    "test": "jest"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.23.0",
+    "@babel/preset-react": "^7.22.15",
+    "autoprefixer": "^10.4.16",
+    "esbuild": "^0.19.4",
+    "jest": "^29.7.0",
+    "nodemon": "^3.0.1",
+    "postcss": "^8.4.31",
+    "sharp": "^0.32.6",
+    "tailwindcss": "^3.3.3"
+  }
+}

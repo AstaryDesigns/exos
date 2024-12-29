@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-50: #FEF2F2;
+  --primary-100: #FEE2E2;
+  --primary-200: #FECACA;
+  --primary-300: #FCA5A5;
+  --primary-400: #F87171;
+  --primary-500: #EF4444;  /* Main brand color */
+  --primary-600: #DC2626;
+  --primary-700: #B91C1C;
+  --primary-800: #991B1B;
+  --primary-900: #7F1D1D;
+}
+
+.btn-primary {
+  @apply bg-red-500 text-white hover:bg-red-600 px-4 py-2 rounded-lg transition-colors;
+}
+
+.btn-secondary {
+  @apply bg-red-100 text-red-700 hover:bg-red-200 px-4 py-2 rounded-lg transition-colors;
+}
+
+.input-primary {
+  @apply border-2 border-red-300 focus:border-red-500 focus:ring-2 focus:ring-red-200 rounded-lg px-4 py-2 outline-none;
+}
+
+.badge {
+  @apply bg-red-100 text-red-700 text-sm px-2 py-1 rounded-full;
+}
+
+.card {
+  @apply bg-white shadow-lg rounded-lg p-6 border border-red-100;
+}
+
+/* Dark mode overrides */
+.dark {
+  --primary-50: #7F1D1D;
+  --primary-100: #991B1B;
+  --primary-200: #B91C1C;
+  --primary-300: #DC2626;
+  --primary-400: #EF4444;
+  --primary-500: #F87171;
+  --primary-600: #FCA5A5;
+  --primary-700: #FECACA;
+  --primary-800: #FEE2E2;
+  --primary-900: #FEF2F2;
+}
+
+.dark .card {
+  @apply bg-gray-800 border-red-900;
+}
